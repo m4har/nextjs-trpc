@@ -78,7 +78,7 @@ export default function TodoList({
         }}
       >
         {getTodos.data.map((i) => (
-          <List>
+          <List key={i.id.toString()}>
             <ListItem
               secondaryAction={
                 i.status ? (
